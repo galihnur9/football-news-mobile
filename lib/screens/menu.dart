@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:football_news/widgets/left_drawer.dart';
 import 'package:football_news/widgets/news_card.dart';
 class MyHomePage extends StatelessWidget {
   MyHomePage({super.key});
@@ -17,15 +16,17 @@ class MyHomePage extends StatelessWidget {
     return Scaffold(
       // AppBar adalah bagian atas halaman yang menampilkan judul.
       appBar: AppBar(
-        title: const Center(
-          child: Text(
-            'Form Tambah Berita',
+        // Judul aplikasi "Football News" dengan teks putih dan tebal.
+        title: const Text(
+          'Football News',
+          style: TextStyle(
+            color: Colors.white,
+            fontWeight: FontWeight.bold,
           ),
         ),
-        backgroundColor: Colors.indigo,
-        foregroundColor: Colors.white,
+        // Warna latar belakang AppBar diambil dari skema warna tema aplikasi.
+        backgroundColor: Theme.of(context).colorScheme.primary,
       ),
-      drawer: LeftDrawer(),
       // Body halaman dengan padding di sekelilingnya.
       body: Padding(
         padding: const EdgeInsets.all(16.0),
