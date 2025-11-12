@@ -37,7 +37,7 @@ class _NewsFormPageState extends State<NewsFormPage> {
             foregroundColor: Colors.white,
           ),
           // TODO: Tambahkan drawer yang sudah dibuat di sini
-          drawer: LeftDrawer(),
+          drawer: const LeftDrawer(),
           body: Form(
             key: _formKey,
             child: SingleChildScrollView(
